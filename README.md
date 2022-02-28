@@ -20,5 +20,4 @@ $ symfony serve
 adjust config/packages/security.yaml
 
     access_control:
-        # { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
-        - { path: ^/, roles: IS_AUTHENTICATED_REMEMBERED }
+        - { path: ^/$, roles: ROLE_USER }
